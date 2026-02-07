@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Epic Clothing | Women Fashion</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <h1>Epic Clothing</h1>
+  <p>Luxury Women Fashion</p>
+</header>
+
+<section id="categories" class="categories">
+  <button onclick="filterCategory('All')">All</button>
+  <button onclick="filterCategory('Dresses')">Dresses</button>
+  <button onclick="filterCategory('Tops')">Tops</button>
+  <button onclick="filterCategory('Skirts')">Skirts</button>
+</section>
+
+<div class="products" id="productList"></div>
+
+<a class="whatsapp" href="#" id="whatsappBtn" target="_blank">Order on WhatsApp</a>
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({duration:1200,once:true});
+loadProducts(false);
+</script>
+</body>
+</html>
